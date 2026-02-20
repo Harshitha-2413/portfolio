@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Harshitha | Data, Analytics & BI</title>
+    <title>Harshitha | Portfolio</title>
     <meta
       name="description"
-      content="Harshitha's portfolio: data systems, analytics, dashboards, and reliable data workflows."
+      content="Harshitha's portfolio: data, analytics, BI, and reliable data workflows."
     />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -14,270 +14,442 @@
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
+    <!-- Custom cursor -->
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+
+    <!-- left-side interactive scroll beads -->
+    <nav id="scrollBeads" aria-label="Section navigation"></nav>
+
     <header class="nav">
       <div class="container nav-inner">
-        <a class="brand" href="#home">Harshitha</a>
+        <a class="brand" href="#top">Harshitha</a>
 
         <nav class="nav-links" aria-label="Primary">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
+          <a href="#work">Projects</a>
+          <a href="#hackathons">Hackathons</a>
           <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+          <a href="#skills">Skills</a>
+          <a href="#beyond">Interests</a>
+          <a href="#contact">Get in touch</a>
         </nav>
 
-        <button
-          class="mode-toggle"
-          type="button"
-          id="modeToggle"
-          aria-pressed="false"
-        >
-          Chill Mode
-        </button>
+        <div class="nav-actions">
+          <label class="theme-switch" for="themeToggle" aria-label="Toggle theme">
+            <input
+              id="themeToggle"
+              class="theme-switch-input"
+              type="checkbox"
+              role="switch"
+              aria-checked="false"
+            />
+            <span class="theme-switch-track" aria-hidden="true">
+              <span class="theme-switch-icon sun" aria-hidden="true">☀</span>
+              <span class="theme-switch-icon moon" aria-hidden="true">☾</span>
+              <span class="theme-switch-knob" aria-hidden="true"></span>
+            </span>
+          </label>
+
+          <button class="icon-btn primary" type="button" id="resumeBtn">
+            Download Resume
+          </button>
+        </div>
       </div>
     </header>
 
     <main id="main" class="container">
-      <!-- HOME -->
-      <section id="home" class="hero">
-        <div class="hero-left">
-          <p class="kicker">DATA · ANALYTICS · SYSTEMS · INSIGHTS</p>
-          <h1 class="hero-title">Hi, I’m Harshitha 👋</h1>
-          <p class="hero-subtitle">
-            I build reliable, decision-friendly data outputs: clean models,
-            trustworthy pipelines, and dashboards that people actually use.
+      <!-- HERO -->
+      <section id="top" class="intro" data-label="Home">
+        <div class="intro-left">
+          <p class="intro-kicker">DATA · ANALYTICS · BI · SYSTEMS</p>
+          <h1 class="intro-title">Hi, I’m Harshitha 👋</h1>
+
+          <p class="intro-text">
+            I build decision-ready outputs from messy inputs. I’m the person who
+            hunts down where data breaks, fixes it early, and keeps workflows reliable
+            enough that teams stop second-guessing the numbers.
           </p>
 
-          <div class="hero-actions">
-            <a class="btn primary" href="#projects">View Projects</a>
-            <a class="btn" href="#contact">Contact</a>
+          <p class="intro-text">
+            I’m open to roles across analytics, BI, and data-focused systems.
+            I care about clarity, correctness, and building things that hold up in the real world.
+          </p>
+
+          <div class="intro-actions">
+            <a href="#work" class="btn primary">View projects</a>
+            <a href="#contact" class="btn">Get in touch</a>
           </div>
         </div>
 
-        <div class="hero-right">
+        <div class="intro-right">
           <img src="me.jpg" alt="Portrait of Harshitha" loading="lazy" />
         </div>
       </section>
 
-      <!-- ABOUT -->
-      <section id="about" class="section">
+      <!-- HOW I WORK -->
+      <section class="section" id="how" data-label="How I Work">
         <div class="section-head">
-          <h2>About Me</h2>
-          <p class="lead">
-            I enjoy understanding how information flows, where it breaks, and
-            how thoughtful design turns messy data into something teams can
-            trust.
-          </p>
+          <h2>How I Work</h2>
+          <div class="section-underline" aria-hidden="true"></div>
+          <p class="lead">Simple process, consistent results.</p>
         </div>
 
-        <div class="card">
-          <ul class="bullets">
+        <div class="card tilt reveal">
+          <ul class="bullets bullets-strong">
             <li>
-              <strong>Decision-first:</strong> I start by clarifying what
-              decision the data needs to support.
+              <strong>Start with the decision</strong>
+              <span class="sub">Define what needs to change before building anything.</span>
             </li>
             <li>
-              <strong>Quality matters:</strong> validation early, because bad
-              data multiplies problems downstream.
+              <strong>Build quality in</strong>
+              <span class="sub">Validate early so bad data doesn’t spread.</span>
             </li>
             <li>
-              <strong>Simple systems:</strong> clear models and maintainable
-              workflows over complexity.
+              <strong>Keep systems simple</strong>
+              <span class="sub">Maintainable beats complicated.</span>
             </li>
             <li>
-              <strong>Clear communication:</strong> I explain work so both
-              technical and non-technical users can act.
+              <strong>Communicate the “so what”</strong>
+              <span class="sub">Ship insights people can act on.</span>
             </li>
           </ul>
         </div>
       </section>
 
-      <!-- SKILLS -->
-      <section id="skills" class="section">
+      <!-- PROJECTS -->
+      <section id="work" class="section" data-label="Projects">
         <div class="section-head">
-          <h2>Skills</h2>
-          <p class="lead">
-            Strong on data engineering foundations and BI workflows. Optimized
-            for reliability and clarity.
-          </p>
+          <h2 class="big-title">Projects</h2>
+          <div class="section-underline strong" aria-hidden="true"></div>
+          <p class="lead">Fast to skim. Easy to explain in interviews.</p>
         </div>
 
-        <div class="grid">
-          <div class="card">
-            <h3 class="card-title">Data &amp; SQL</h3>
-            <p class="muted">SQL, PL/SQL, IBM DB2, MySQL, Snowflake</p>
-          </div>
-          <div class="card">
-            <h3 class="card-title">ETL &amp; Pipelines</h3>
-            <p class="muted">
-              Talend, iWay, KNIME, validation &amp; reconciliation
+        <div class="projects-grid">
+          <article class="card tilt fun-card reveal proj-card" style="--d: 0ms">
+            <span class="pill">Dashboard</span>
+            <h3>Netflix Content Analysis</h3>
+            <p class="muted card-desc">
+              Tableau dashboard built for quick exploration of content mix and trends.
             </p>
-          </div>
-          <div class="card">
-            <h3 class="card-title">BI &amp; Analytics</h3>
-            <p class="muted">
-              Tableau, Power BI, KPI reporting, dashboard design
+
+            <div class="chips">
+              <span class="chip">Tableau</span>
+              <span class="chip">EDA</span>
+              <span class="chip">Storytelling</span>
+            </div>
+
+            <ul class="bullets bullets-tight">
+              <li>Interactive filters + trends for fast scanning.</li>
+              <li>Designed for clarity: fewer visuals, better answers.</li>
+              <li>Built to walk through cleanly in under 2 minutes.</li>
+            </ul>
+
+            <div class="card-actions">
+              <a
+                class="action-btn live"
+                target="_blank"
+                rel="noreferrer"
+                href="https://public.tableau.com/views/NetflixMoviesandTVShowsAnalysis_17677270849110/Dashboard1"
+              >
+                View dashboard <span class="arrow">→</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="card tilt fun-card reveal proj-card" style="--d: 80ms">
+            <span class="pill">System</span>
+            <h3>House Buddy – Household Inventory Management</h3>
+            <p class="muted card-desc">
+              Live inventory app with validation-first workflows and structured tracking.
             </p>
-          </div>
-          <div class="card">
-            <h3 class="card-title">Applied AI &amp; Automation</h3>
-            <p class="muted">
-              Prompt design, workflow automation, API-based AI tools
+
+            <div class="chips">
+              <span class="chip">.NET API</span>
+              <span class="chip">Azure</span>
+              <span class="chip">Validation</span>
+            </div>
+
+            <ul class="bullets bullets-tight">
+              <li>Track items, quantities, storage location, and expiry.</li>
+              <li>Reduced duplicates using consistent input workflows.</li>
+              <li>Deployed live so it behaves like a real system.</li>
+            </ul>
+
+            <div class="card-actions">
+              <a
+                class="action-btn live"
+                target="_blank"
+                rel="noreferrer"
+                href="https://inventorymanagement202512021656021234-bxcwg3apckcvhkbt.northcentralus-01.azurewebsites.net"
+              >
+                Open live app <span class="arrow">→</span>
+              </a>
+              <a
+                class="action-btn github"
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/Harshitha-2413/7024-Inventory-Management-Web-App"
+              >
+                View code <span class="arrow">→</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="card tilt fun-card reveal proj-card" style="--d: 160ms">
+            <span class="pill">Next</span>
+            <h3>More projects in progress</h3>
+            <p class="muted card-desc">
+              Building a small set of projects with clearer business impact and measurable results.
             </p>
-          </div>
-          <div class="card">
-            <h3 class="card-title">Collaboration</h3>
-            <p class="muted">GitHub, Jira, Agile workflows, documentation</p>
-          </div>
+
+            <div class="chips">
+              <span class="chip">Pipelines</span>
+              <span class="chip">BI</span>
+              <span class="chip">Analytics</span>
+            </div>
+
+            <ul class="bullets bullets-tight">
+              <li>Outcome-driven scope.</li>
+              <li>Strong execution over fancy features.</li>
+              <li>Happy to share what’s next.</li>
+            </ul>
+
+            <div class="card-actions">
+              <a class="action-btn neutral" href="#contact">
+                Ask what I’m building <span class="arrow">→</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- HACKATHONS -->
+      <section id="hackathons" class="section" data-label="Hackathons">
+        <div class="section-head">
+          <h2>Hackathons</h2>
+          <div class="section-underline" aria-hidden="true"></div>
+          <p class="lead">Short timelines, sharp decisions, clean delivery.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="card tilt fun-card reveal hack-card" style="--d: 0ms">
+            <div class="hack-stamp" aria-hidden="true">Top solution</div>
+            <span class="pill pill-hack">Hackathon</span>
+            <h3>DJJ 2025 Margin Concentration (Nucor)</h3>
+            <p class="muted card-desc">
+              Advanced after SQL round into a strategy-focused case analysis.
+            </p>
+
+            <div class="chips">
+              <span class="chip chip-hack">SQL</span>
+              <span class="chip chip-hack">Power BI</span>
+              <span class="chip chip-hack">Risk</span>
+            </div>
+
+            <ul class="bullets bullets-tight">
+              <li>Mapped where margin was concentrated and where it was fragile.</li>
+              <li>Flagged customer dependency hotspots and protection priorities.</li>
+            </ul>
+
+            <p class="note">Recognized as a top-performing solution.</p>
+          </article>
+
+          <article class="card tilt fun-card reveal hack-card" style="--d: 90ms">
+            <div class="hack-stamp" aria-hidden="true">Built fast</div>
+            <span class="pill pill-hack">Hackathon</span>
+            <h3>Manthan – Driver Drowsiness Monitoring (ML)</h3>
+            <p class="muted card-desc">
+              Real-time fatigue detection using video input and ML workflow design.
+            </p>
+
+            <div class="chips">
+              <span class="chip chip-hack">Python</span>
+              <span class="chip chip-hack">Vision</span>
+              <span class="chip chip-hack">ML</span>
+            </div>
+
+            <ul class="bullets bullets-tight">
+              <li>Built a real-time detection flow instead of offline scoring.</li>
+              <li>Focused on reliability and practical false-alarm reduction.</li>
+            </ul>
+
+            <p class="note">Optimized for clarity under time constraints.</p>
+          </article>
         </div>
       </section>
 
       <!-- EXPERIENCE -->
-      <section id="experience" class="section">
+      <section id="experience" class="section" data-label="Experience">
         <div class="section-head">
-          <h2>Experience</h2>
-          <p class="lead">
-            NDA-safe summaries focused on impact and correctness.
-          </p>
+          <h2 class="big-title">Experience</h2>
+          <div class="section-underline strong" aria-hidden="true"></div>
+          <p class="lead">Real work, real constraints, steady output.</p>
         </div>
 
-        <div class="stack">
-          <article class="card">
-            <div class="row">
-              <h3 class="card-title">
-                Enterprise ETL Migration – Banking (Tech Mahindra)
-              </h3>
-              <span class="tag">Talend · SQL · Governance</span>
+        <div class="experience-grid">
+          <article class="exp-vcard reveal" style="--d: 0ms; --band: #1ea89f">
+            <div class="exp-band">
+              <div class="exp-company">University of Cincinnati</div>
             </div>
 
-            <ul class="bullets">
-              <li>
-                Migrated legacy ETL workflows to Talend while preserving
-                business logic.
-              </li>
-              <li>
-                Validated data accuracy using reconciliation checks to prevent
-                reporting issues.
-              </li>
-              <li>
-                Worked in a correctness-first environment with strict controls
-                and review.
-              </li>
-            </ul>
+            <div class="exp-badge" aria-hidden="true">
+              <img class="exp-logo" src="uc.png" alt="" />
+            </div>
 
-            <p class="note">NDA-safe summary (no public code).</p>
+            <div class="exp-body">
+              <h3 class="exp-role">Teaching Assistant – Digital Technology in Business</h3>
+              <div class="exp-meta">Aug 2025 – Present</div>
+
+              <ul class="bullets bullets-tight">
+                <li>Teach 130+ students Excel analytics, cleaning, and validation.</li>
+                <li>Lead lab sessions in Excel, Access, and Python with hands-on exercises.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="exp-vcard reveal" style="--d: 90ms; --band: #0f6f7a">
+            <div class="exp-band">
+              <div class="exp-company">Tech Mahindra</div>
+            </div>
+
+            <div class="exp-badge" aria-hidden="true">
+              <img class="exp-logo" src="techmahindra.png" alt="" />
+            </div>
+
+            <div class="exp-body">
+              <h3 class="exp-role">Software Engineer</h3>
+              <div class="exp-meta">Sep 2023 – Apr 2025</div>
+
+              <ul class="bullets bullets-tight">
+                <li>Migrated ETL (iWay → Talend) to improve reliability.</li>
+                <li>Validated datasets using SQL + IBM DB2 for accuracy.</li>
+              </ul>
+
+              <p class="note">NDA-safe summary (no client details).</p>
+            </div>
           </article>
         </div>
       </section>
 
-      <!-- PROJECTS -->
-      <section id="projects" class="section">
+      <!-- SKILLS -->
+      <section id="skills" class="section" data-label="Skills">
         <div class="section-head">
-          <h2>Projects</h2>
-          <p class="lead">
-            A few focused examples that show how I move from question → system →
-            usable output.
-          </p>
+          <h2>Skills</h2>
+          <div class="section-underline" aria-hidden="true"></div>
+          <p class="lead">Grouped so recruiters can scan fast.</p>
         </div>
 
-        <div class="stack">
-          <article class="card">
-            <span class="pill">Dashboard</span>
-            <h3>Netflix Movies &amp; TV Shows Analysis</h3>
-            <ul class="bullets">
-              <li>
-                Built an interactive Tableau dashboard with filters and trend
-                views.
-              </li>
-              <li>
-                Designed decision-friendly comparisons (mix, trends, genre
-                patterns).
-              </li>
-              <li>
-                Kept insights simple and scannable for non-technical users.
-              </li>
-            </ul>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://public.tableau.com/views/NetflixMoviesandTVShowsAnalysis_17677270849110/Dashboard1"
-              >View dashboard →</a
-            >
-          </article>
+        <div class="grid skills-grid">
+          <div class="card tilt reveal" style="--d: 0ms">
+            <h3 class="card-title">Data &amp; Query</h3>
+            <p class="muted">SQL, PL/SQL, validation, reconciliation</p>
+          </div>
 
-          <article class="card">
-            <span class="pill">System</span>
-            <h3>House Buddy – Inventory &amp; Resource Management</h3>
-            <ul class="bullets">
-              <li>
-                Designed a structured inventory system focused on clean modeling
-                and validation.
-              </li>
-              <li>
-                Reduced duplication through consistent workflows and clear
-                structure.
-              </li>
-              <li>
-                Built with downstream reporting/analytics readiness in mind.
-              </li>
-            </ul>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://github.com/Harshitha-2413/7024-Inventory-Management-Web-App"
-              >View GitHub →</a
-            >
-          </article>
+          <div class="card tilt reveal" style="--d: 60ms">
+            <h3 class="card-title">Programming</h3>
+            <p class="muted">Python, R, Java, JavaScript, C</p>
+          </div>
+
+          <div class="card tilt reveal" style="--d: 120ms">
+            <h3 class="card-title">ETL &amp; Pipelines</h3>
+            <p class="muted">Talend, iWay, KNIME, workflow design</p>
+          </div>
+
+          <div class="card tilt reveal" style="--d: 180ms">
+            <h3 class="card-title">Databases &amp; Warehouses</h3>
+            <p class="muted">IBM DB2, Oracle, MySQL, Snowflake, SAP HANA, BigQuery, Access</p>
+          </div>
+
+          <div class="card tilt reveal" style="--d: 240ms">
+            <h3 class="card-title">BI &amp; Reporting</h3>
+            <p class="muted">Power BI, Tableau, Excel (Pivot, formulas, validation)</p>
+          </div>
+
+          <div class="card tilt reveal" style="--d: 300ms">
+            <h3 class="card-title">Automation &amp; Collaboration</h3>
+            <p class="muted">Zapier, OpenAI API, RAG, Dify.ai, GitHub, Jira, Agile</p>
+          </div>
         </div>
       </section>
 
-      <!-- CONTACT -->
-      <section id="contact" class="section">
+      <!-- INTERESTS / BEYOND WORK -->
+      <section id="beyond" class="section" data-label="Interests">
         <div class="section-head">
-          <h2>Get In Touch</h2>
-          <p class="lead">
-            Best way to reach me: email. I usually respond within 24–48 hours.
-          </p>
+          <h2>Interests / Beyond Work</h2>
+          <div class="section-underline" aria-hidden="true"></div>
+          <p class="lead">How I grow: teaching, experimenting, and building better habits.</p>
         </div>
 
-        <div class="card contact-card">
-          <p class="contact-line">
-            <strong>Email:</strong>
-            <a href="mailto:barataha@mail.uc.edu">barataha@mail.uc.edu</a>
-          </p>
-          <p class="contact-line">
-            <strong>LinkedIn:</strong>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.linkedin.com/in/harshitha-baratam-379758191"
-              >harshitha-baratam</a
-            >
-          </p>
-          <p class="contact-line">
-            <strong>GitHub:</strong>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://github.com/Harshitha-2413"
-              >Harshitha-2413</a
-            >
-          </p>
+        <div class="grid beyond-grid">
+          <div class="card tilt reveal" style="--d: 0ms">
+            <span class="pill">Teaching</span>
+            <h3>Turning confusion into steps</h3>
+            <p class="muted card-desc">
+              I like translating messy concepts into repeatable steps people can actually use.
+              Teaching keeps me honest: if it’s unclear, it’s not done.
+            </p>
+          </div>
 
-          <div class="contact-actions">
-            <a
-              class="btn primary"
-              href="mailto:barataha@mail.uc.edu?subject=Portfolio%20Inquiry"
-              >Email me</a
-            >
-            <a
-              class="btn"
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.linkedin.com/in/harshitha-baratam-379758191"
-              >Message on LinkedIn</a
-            >
+          <div class="card tilt reveal" style="--d: 90ms">
+            <span class="pill">Community</span>
+            <h3>Digital skills training (Voluntary)</h3>
+            <p class="muted card-desc">
+              I ran interactive sessions on digital literacy and communication skills,
+              focused on confidence and practical readiness.
+            </p>
+          </div>
+        </div>
+
+        <div class="card tilt reveal" style="--d: 160ms">
+          <span class="pill">What I’m optimizing for</span>
+
+          <div class="chips chips-spaced">
+            <span class="chip">Trustworthy data, not “pretty” data</span>
+            <span class="chip">Dashboards that explain the why</span>
+            <span class="chip">Validation at the edges</span>
+            <span class="chip">Automation that saves real time</span>
+            <span class="chip">Testing the awkward cases</span>
+          </div>
+
+          <p class="note">
+            My favorite outputs are the ones people stop questioning and start using.
+          </p>
+        </div>
+      </section>
+
+      <!-- GET IN TOUCH -->
+      <section id="contact" class="section" data-label="Contact">
+        <div class="contact-wrap">
+          <div class="contact-card-big reveal" style="--d: 0ms">
+            <h2 class="contact-title">GET IN<br />TOUCH</h2>
+
+            <div class="contact-line" aria-hidden="true"></div>
+
+            <a class="contact-email" href="mailto:barataha@mail.uc.edu">
+              barataha@mail.uc.edu
+            </a>
+
+            <div class="contact-icons-row">
+              <a class="bubble b1" href="mailto:barataha@mail.uc.edu" aria-label="Email" title="Email">✉️</a>
+              <a
+                class="bubble b2"
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.linkedin.com/in/harshitha-baratam-379758191"
+                aria-label="LinkedIn"
+                title="LinkedIn"
+                >in</a
+              >
+              <a
+                class="bubble b3"
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/Harshitha-2413"
+                aria-label="GitHub"
+                title="GitHub"
+                >⌂</a
+              >
+            </div>
           </div>
         </div>
       </section>
@@ -287,15 +459,15 @@
       </footer>
     </main>
 
-    <script src="reveal.js"></script>
-    <script src="theme.js"></script>
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
-      // Always land at the top even if a hash is present
       if (window.location.hash) {
         window.history.replaceState(null, "", window.location.pathname);
         window.scrollTo(0, 0);
       }
     </script>
+
+    <script src="reveal.js"></script>
+    <script src="theme.js"></script>
   </body>
 </html>
