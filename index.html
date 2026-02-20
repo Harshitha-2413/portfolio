@@ -1,127 +1,301 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Harshitha | Data Engineering & Business Intelligence</title>
-  <link rel="stylesheet" href="style.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harshitha | Data, Analytics & BI</title>
+    <meta
+      name="description"
+      content="Harshitha's portfolio: data systems, analytics, dashboards, and reliable data workflows."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-</head>
-<body>
-  <header class="nav">
-    <div class="container nav-inner">
-      <a class="brand" href="#">Harshitha</a>
-      <nav class="nav-links">
-        <a href="#work">Work</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-  <main class="container">
-    <section class="hero">
-      <div class="hero-card">
-        <p class="kicker">Portfolio</p>
-        <h1>Data Engineering &amp; Business Intelligence</h1>
-<p class="subtitle">
-  Graduate student focused on building reliable data pipelines and analytics that support clear, actionable business decisions.
-</p>
-<p class="subtitle">
-  Curious by nature, I enjoy understanding how data flows through systems and how thoughtful design improves trust, insight, and impact.
-</p>
+    <header class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="#home">Harshitha</a>
 
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <button
+          class="mode-toggle"
+          type="button"
+          id="modeToggle"
+          aria-pressed="false"
+        >
+          Chill Mode
+        </button>
       </div>
-    </section>
-<section class="section">
-  <h2>How I Work</h2>
-  <p class="lead">
-    I focus on building reliable data systems and analytics that support real decisions, not just outputs.
-  </p>
+    </header>
 
-  <div class="card">
-    <ul>
-      <li><strong>Start with the question:</strong> I clarify what decision the data needs to support before building pipelines or dashboards.</li>
-      <li><strong>Design for data quality:</strong> I prioritize validation and consistency early, because unreliable data breaks everything downstream.</li>
-      <li><strong>Keep systems simple:</strong> I prefer clear data models and maintainable workflows over unnecessary complexity.</li>
-      <li><strong>Communicate clearly:</strong> I explain technical work so both technical and non-technical users can act on it.</li>
-    </ul>
-  </div>
-</section>
-<section class="section">
-  <h2>Skills</h2>
-  <p class="lead">
-    Focused on data engineering foundations and business intelligence workflows rather than heavy application development.
-  </p>
+    <main id="main" class="container">
+      <!-- HOME -->
+      <section id="home" class="hero">
+        <div class="hero-left">
+          <p class="kicker">DATA · ANALYTICS · SYSTEMS · INSIGHTS</p>
+          <h1 class="hero-title">Hi, I’m Harshitha 👋</h1>
+          <p class="hero-subtitle">
+            I build reliable, decision-friendly data outputs: clean models,
+            trustworthy pipelines, and dashboards that people actually use.
+          </p>
 
-  <div class="card">
-    <ul>
-      <li><strong>Data & SQL:</strong> SQL, PL/SQL, IBM DB2, MySQL, Snowflake</li>
-      <li><strong>ETL & Pipelines:</strong> Talend, iWay, KNIME, data validation & reconciliation</li>
-      <li><strong>BI & Analytics:</strong> Tableau, Power BI, dashboard design, KPI reporting</li>
-      <li><strong>Applied AI & Automation:</strong> Prompt design, workflow automation, API-based AI tools</li>
-      <li><strong>Collaboration:</strong> GitHub, Jira, Agile workflows, documentation</li>
-    </ul>
-  </div>
-</section>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn" href="#contact">Contact</a>
+          </div>
+        </div>
 
-    <section id="work" class="section">
-      <h2>Case Studies</h2>
-<p class="lead">
-  A few focused examples showing how I approach data problems, from defining the question to building reliable outputs.
-</p>
+        <div class="hero-right">
+          <img src="me.jpg" alt="Portrait of Harshitha" loading="lazy" />
+        </div>
+      </section>
 
-      <div class="card">
-        <span class="pill">BI Dashboard</span>
-        <h3>Netflix Movies &amp; TV Shows Analysis</h3>
-        <ul>
-          <li>Built an interactive Tableau dashboard with filters and trend views to explore content patterns.</li>
-          <li>Focused on decision-friendly comparisons (content type mix, release trends, and genre patterns).</li>
-          <li>Emphasis: asking clear questions, validating data, and communicating insights simply.</li>
-        </ul>
-        <a target="_blank" rel="noreferrer"
-          href="https://public.tableau.com/views/NetflixMoviesandTVShowsAnalysis_17677270849110/Dashboard1">
-          View dashboard →
-        </a>
-      </div>
-       <div class="card" style="margin-top:20px;">
-  <span class="pill">Data-Centric System</span>
-  <h3>House Buddy – Inventory & Resource Management</h3>
-  <ul>
-    <li>Designed a structured inventory management system focused on clean data modeling and validation.</li>
-    <li>Implemented consistent workflows to reduce data duplication and maintain reliable records.</li>
-    <li>Emphasis: data quality at entry, maintainable structure, and readiness for downstream analytics.</li>
-  </ul>
-  <a target="_blank" rel="noreferrer"
-     href="https://github.com/Harshitha-2413/7024-Inventory-Management-Web-App">
-    View GitHub repository →
-  </a>
-</div>
-<div class="card" style="margin-top:20px;">
-  <span class="pill">Data Engineering</span>
-  <h3>Enterprise ETL Migration – Banking (Tech Mahindra)</h3>
-  <ul>
-    <li>Migrated legacy ETL workflows to Talend for a banking client while preserving existing business logic.</li>
-    <li>Validated data accuracy using SQL reconciliation and comparison checks to prevent reporting issues.</li>
-    <li>Worked within strict governance and reliability constraints where correctness mattered more than speed.</li>
-  </ul>
-  <p style="color:#5a5f6a; font-weight:600; margin-top:12px;">
-    NDA-safe summary (no public code).
-  </p>
-</div>
-    </section>
-   
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <div class="section-head">
+          <h2>About Me</h2>
+          <p class="lead">
+            I enjoy understanding how information flows, where it breaks, and
+            how thoughtful design turns messy data into something teams can
+            trust.
+          </p>
+        </div>
 
+        <div class="card">
+          <ul class="bullets">
+            <li>
+              <strong>Decision-first:</strong> I start by clarifying what
+              decision the data needs to support.
+            </li>
+            <li>
+              <strong>Quality matters:</strong> validation early, because bad
+              data multiplies problems downstream.
+            </li>
+            <li>
+              <strong>Simple systems:</strong> clear models and maintainable
+              workflows over complexity.
+            </li>
+            <li>
+              <strong>Clear communication:</strong> I explain work so both
+              technical and non-technical users can act.
+            </li>
+          </ul>
+        </div>
+      </section>
 
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <p class="lead">
-        Email: <a href="mailto:barataha@mail.uc.edu">barataha@mail.uc.edu</a> |
-        GitHub: <a target="_blank" rel="noreferrer" href="https://github.com/Harshitha-2413">Harshitha-2413</a> |
-        LinkedIn: <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/harshitha-baratam-379758191">harshitha-baratam</a>
-      </p>
-    </section>
-  </main>
-</body>
+      <!-- SKILLS -->
+      <section id="skills" class="section">
+        <div class="section-head">
+          <h2>Skills</h2>
+          <p class="lead">
+            Strong on data engineering foundations and BI workflows. Optimized
+            for reliability and clarity.
+          </p>
+        </div>
 
+        <div class="grid">
+          <div class="card">
+            <h3 class="card-title">Data &amp; SQL</h3>
+            <p class="muted">SQL, PL/SQL, IBM DB2, MySQL, Snowflake</p>
+          </div>
+          <div class="card">
+            <h3 class="card-title">ETL &amp; Pipelines</h3>
+            <p class="muted">
+              Talend, iWay, KNIME, validation &amp; reconciliation
+            </p>
+          </div>
+          <div class="card">
+            <h3 class="card-title">BI &amp; Analytics</h3>
+            <p class="muted">
+              Tableau, Power BI, KPI reporting, dashboard design
+            </p>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Applied AI &amp; Automation</h3>
+            <p class="muted">
+              Prompt design, workflow automation, API-based AI tools
+            </p>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Collaboration</h3>
+            <p class="muted">GitHub, Jira, Agile workflows, documentation</p>
+          </div>
+        </div>
+      </section>
 
+      <!-- EXPERIENCE -->
+      <section id="experience" class="section">
+        <div class="section-head">
+          <h2>Experience</h2>
+          <p class="lead">
+            NDA-safe summaries focused on impact and correctness.
+          </p>
+        </div>
+
+        <div class="stack">
+          <article class="card">
+            <div class="row">
+              <h3 class="card-title">
+                Enterprise ETL Migration – Banking (Tech Mahindra)
+              </h3>
+              <span class="tag">Talend · SQL · Governance</span>
+            </div>
+
+            <ul class="bullets">
+              <li>
+                Migrated legacy ETL workflows to Talend while preserving
+                business logic.
+              </li>
+              <li>
+                Validated data accuracy using reconciliation checks to prevent
+                reporting issues.
+              </li>
+              <li>
+                Worked in a correctness-first environment with strict controls
+                and review.
+              </li>
+            </ul>
+
+            <p class="note">NDA-safe summary (no public code).</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <p class="lead">
+            A few focused examples that show how I move from question → system →
+            usable output.
+          </p>
+        </div>
+
+        <div class="stack">
+          <article class="card">
+            <span class="pill">Dashboard</span>
+            <h3>Netflix Movies &amp; TV Shows Analysis</h3>
+            <ul class="bullets">
+              <li>
+                Built an interactive Tableau dashboard with filters and trend
+                views.
+              </li>
+              <li>
+                Designed decision-friendly comparisons (mix, trends, genre
+                patterns).
+              </li>
+              <li>
+                Kept insights simple and scannable for non-technical users.
+              </li>
+            </ul>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://public.tableau.com/views/NetflixMoviesandTVShowsAnalysis_17677270849110/Dashboard1"
+              >View dashboard →</a
+            >
+          </article>
+
+          <article class="card">
+            <span class="pill">System</span>
+            <h3>House Buddy – Inventory &amp; Resource Management</h3>
+            <ul class="bullets">
+              <li>
+                Designed a structured inventory system focused on clean modeling
+                and validation.
+              </li>
+              <li>
+                Reduced duplication through consistent workflows and clear
+                structure.
+              </li>
+              <li>
+                Built with downstream reporting/analytics readiness in mind.
+              </li>
+            </ul>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/Harshitha-2413/7024-Inventory-Management-Web-App"
+              >View GitHub →</a
+            >
+          </article>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <div class="section-head">
+          <h2>Get In Touch</h2>
+          <p class="lead">
+            Best way to reach me: email. I usually respond within 24–48 hours.
+          </p>
+        </div>
+
+        <div class="card contact-card">
+          <p class="contact-line">
+            <strong>Email:</strong>
+            <a href="mailto:barataha@mail.uc.edu">barataha@mail.uc.edu</a>
+          </p>
+          <p class="contact-line">
+            <strong>LinkedIn:</strong>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.linkedin.com/in/harshitha-baratam-379758191"
+              >harshitha-baratam</a
+            >
+          </p>
+          <p class="contact-line">
+            <strong>GitHub:</strong>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/Harshitha-2413"
+              >Harshitha-2413</a
+            >
+          </p>
+
+          <div class="contact-actions">
+            <a
+              class="btn primary"
+              href="mailto:barataha@mail.uc.edu?subject=Portfolio%20Inquiry"
+              >Email me</a
+            >
+            <a
+              class="btn"
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.linkedin.com/in/harshitha-baratam-379758191"
+              >Message on LinkedIn</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p class="muted">© <span id="year"></span> Harshitha</p>
+      </footer>
+    </main>
+
+    <script src="reveal.js"></script>
+    <script src="theme.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      // Always land at the top even if a hash is present
+      if (window.location.hash) {
+        window.history.replaceState(null, "", window.location.pathname);
+        window.scrollTo(0, 0);
+      }
+    </script>
+  </body>
 </html>
