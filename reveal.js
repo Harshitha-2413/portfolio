@@ -94,53 +94,81 @@
     sections.forEach((s) => spy.observe(s));
   })();
 
-  // Custom cursor (dot + ring)
+  // Custom cursor: sparkle trail
   (function () {
-    const dot = document.querySelector(".cursor-dot");
-    const ring = document.querySelector(".cursor-ring");
-    if (!dot || !ring) return;
+    const layer = document.querySelector(".sparkle-layer");
+    if (!layer) return;
 
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (reduce) return;
+    const touch = window.matchMedia("(hover: none)").matches;
+    if (reduce || touch) return;
 
-    let x = window.innerWidth / 2;
-    let y = window.innerHeight / 2;
-    let rx = x;
-    let ry = y;
+    let lastX = -9999;
+    let lastY = -9999;
+    let lastT = 0;
 
-    const hoverSelector = "a, button, .bead-btn, .bubble, .action-btn, .btn, .icon-btn, label";
+    const minDist = 10; // px
+    const minDelay = 22; // ms
 
-    function onMove(e) {
-      x = e.clientX;
-      y = e.clientY;
-      dot.style.left = `${x}px`;
-      dot.style.top = `${y}px`;
+    function dist(a, b, c, d) {
+      const dx = a - c;
+      const dy = b - d;
+      return Math.sqrt(dx * dx + dy * dy);
     }
 
-    function loop() {
-      rx += (x - rx) * 0.18;
-      ry += (y - ry) * 0.18;
-      ring.style.left = `${rx}px`;
-      ring.style.top = `${ry}px`;
-      requestAnimationFrame(loop);
+    function spawn(x, y, intensity = 1) {
+      const s = document.createElement("span");
+      s.className = "sparkle";
+
+      // Small randomness so it feels alive but not chaotic
+      const size = (8 + Math.random() * 6) * intensity;
+      const rot = 25 + Math.random() * 60;
+      const dur = 520 + Math.random() * 240;
+
+      s.style.width = `${size}px`;
+      s.style.height = `${size}px`;
+      s.style.left = `${x}px`;
+      s.style.top = `${y}px`;
+      s.style.animationDuration = `${dur}ms`;
+      s.style.transform = `translate(-50%, -50%) rotate(${rot}deg)`;
+
+      layer.appendChild(s);
+      s.addEventListener("animationend", () => s.remove(), { once: true });
     }
 
-    window.addEventListener("mousemove", onMove, { passive: true });
-    loop();
+    const hoverSelector =
+      "a, button, .bead-btn, .bubble, .action-btn, .btn, .icon-btn, label";
+    let hovering = false;
 
     document.addEventListener("mouseover", (e) => {
-      const target = e.target;
-      if (!(target instanceof Element)) return;
-      if (target.closest(hoverSelector)) ring.classList.add("is-hover");
+      const t = e.target;
+      if (!(t instanceof Element)) return;
+      hovering = Boolean(t.closest(hoverSelector));
     });
 
     document.addEventListener("mouseout", (e) => {
-      const target = e.target;
-      if (!(target instanceof Element)) return;
-      if (target.closest(hoverSelector)) ring.classList.remove("is-hover");
+      const t = e.target;
+      if (!(t instanceof Element)) return;
+      if (t.closest(hoverSelector)) hovering = false;
     });
 
-    window.addEventListener("mousedown", () => ring.classList.add("is-down"));
-    window.addEventListener("mouseup", () => ring.classList.remove("is-down"));
+    window.addEventListener(
+      "mousemove",
+      (e) => {
+        const now = performance.now();
+        const x = e.clientX;
+        const y = e.clientY;
+
+        if (now - lastT < minDelay) return;
+        if (dist(x, y, lastX, lastY) < minDist) return;
+
+        lastT = now;
+        lastX = x;
+        lastY = y;
+
+        spawn(x, y, hovering ? 1.08 : 1);
+      },
+      { passive: true }
+    );
   })();
 })();
