@@ -834,3 +834,97 @@ button:focus-visible {
   .nav { background: rgba(7, 18, 31, 0.86); }
   :root[data-theme="light"] .nav { background: rgba(243, 251, 250, 0.92); }
 }
+/* --- Projects: clean list layout --- */
+.projects-list { display: grid; gap: 18px; }
+
+.project-item {
+  padding: 18px;
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 14px;
+  background: rgba(255,255,255,0.02);
+}
+
+.project-top { display: flex; justify-content: space-between; gap: 12px; }
+.project-title { margin: 0; }
+.project-desc { margin-top: 8px; }
+.project-actions { margin-top: 12px; display: flex; gap: 10px; flex-wrap: wrap; }
+
+/* View more */
+.projects-more {
+  border: 1px dashed rgba(255,255,255,0.18);
+  border-radius: 14px;
+  padding: 12px;
+  background: rgba(255,255,255,0.01);
+}
+.projects-more-summary { cursor: pointer; list-style: none; font-weight: 600; padding: 6px 8px; }
+.projects-more-summary::-webkit-details-marker { display: none; }
+.project-item-more { margin-top: 12px; }
+
+/* --- Hackathons: list layout --- */
+.hack-list { display: grid; gap: 18px; }
+.hack-item {
+  padding: 18px;
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 14px;
+  background: rgba(255,255,255,0.02);
+}
+.hack-title { margin: 0; }
+.hack-desc { margin-top: 8px; }
+/* --- Differentiation: Projects primary, Hackathons secondary --- */
+.projects-primary .project-item {
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.03);
+}
+
+.projects-primary .projects-more {
+  border: 1px dashed rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.015);
+}
+
+.hack-secondary .hack-item {
+  border: 1px dashed rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.012);
+}
+
+.hack-secondary .note {
+  opacity: 0.85;
+}
+/* ===== Make borders visible on light background ===== */
+
+/* Projects = solid border + slightly stronger surface */
+.projects-primary .project-item{
+  border: 1px solid rgba(0,0,0,0.14);
+  background: rgba(255,255,255,0.55);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+/* View more container */
+.projects-primary .projects-more{
+  border: 1px dashed rgba(0,0,0,0.18);
+  background: rgba(255,255,255,0.40);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+}
+
+/* Hackathons = dashed border + lighter surface */
+.hack-secondary .hack-item{
+  border: 1px dashed rgba(0,0,0,0.18);
+  background: rgba(255,255,255,0.35);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+}
+.projects-primary .project-item {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.projects-primary .project-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.10);
+}
+.projects-more-summary {
+  font-weight: 600;
+  cursor: pointer;
+  padding: 8px 0;
+}
+
+.projects-more-summary:hover {
+  opacity: 0.7;
+}
