@@ -1,16 +1,24 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="color-scheme" content="dark light" />
-    <title>Harshitha | Portfolio</title>
-    <meta
-      name="description"
-      content="Harshitha's portfolio: data, analytics, BI, and reliable data workflows."
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark light" />
+  <title>Harshitha | Portfolio</title>
+  <meta
+    name="description"
+    content="Harshitha's portfolio: data, analytics, BI, and reliable data workflows."
+  />
+
+  <!-- Favicon / App Icons -->
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="assets/icons/site.webmanifest" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
 
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -23,7 +31,10 @@
 
     <header class="nav">
       <div class="container nav-inner">
-        <a class="brand" href="#top">Harshitha</a>
+       <a class="brand" href="#top" aria-label="Harshitha home">
+  <img class="brand-logo" src="assets/hb-logo.png" alt="HB logo" />
+  <span class="brand-text">Harshitha</span>
+</a>
 
         <nav class="nav-links" aria-label="Primary">
           <a href="#work">Projects</a>
@@ -244,6 +255,21 @@
           </a>
         </div>
       </article>
+      <article class="project-item project-item-more">
+  <div class="project-top">
+    <h3 class="project-title">Upcoming projects</h3>
+  </div>
+
+  <p class="muted project-desc">
+  New projects are in progress. Curious what’s coming next? Ask me
+</p>
+
+  <div class="project-actions">
+    <a class="action-btn" href="#contact">
+      Contact me <span class="arrow">→</span>
+    </a>
+  </div>
+</article>
     </details>
   </div>
 </section>
@@ -289,7 +315,7 @@
         <li>Organized outputs into clear labeled categories to reduce manual effort.</li>
       </ul>
 
-      <p class="note">Delivered a working prototype and clear documentation within the hackathon timeline.</p>
+      <p class="note">Built, tested, and presented a working pipeline under deadline.</p>
     </article>
   </div>
 </section>
@@ -352,7 +378,7 @@
         <div class="section-head">
           <h2>Skills</h2>
           <div class="section-underline" aria-hidden="true"></div>
-          <p class="lead">Organized for fast scanning and keyword hits.</p>
+          <p class="lead">Skimmable skills. Real-world tools.</p>
         </div>
 
         <div class="grid skills-grid">
@@ -388,51 +414,72 @@
         </div>
       </section>
 
-      <!-- INTERESTS / BEYOND WORK -->
-      <section id="beyond" class="section" data-label="Interests">
-        <div class="section-head">
-          <h2>Interests / Beyond Work</h2>
-          <div class="section-underline" aria-hidden="true"></div>
-          <p class="lead">How I grow: teaching, experimenting, and building better habits.</p>
-        </div>
+     <!-- INTERESTS / BEYOND WORK -->
+<section id="beyond" class="section" data-label="Interests">
+  <div class="section-head">
+    <h2>Interests / Beyond Work</h2>
+    <div class="section-underline" aria-hidden="true"></div>
+    <p class="lead">How I grow: teaching, exploring, and building better habits.</p>
+  </div>
 
-        <div class="grid beyond-grid">
-          <div class="card tilt reveal" style="--d: 0ms">
-            <span class="pill">Teaching</span>
-            <h3>Turning confusion into steps</h3>
-            <p class="muted card-desc">
-              I like translating messy concepts into repeatable steps people can actually use.
-              Teaching keeps me honest: if it’s unclear, it’s not done.
-            </p>
-          </div>
+  <div class="grid beyond-grid">
+    <!-- Card 1 -->
+    <div class="card tilt reveal" style="--d: 0ms">
+      <span class="pill">Teaching</span>
+      <h3>Turning confusion into steps</h3>
+      <p class="muted card-desc">
+        I like translating messy concepts into repeatable steps people can actually use.
+        Teaching keeps me honest: if it’s unclear, it’s not done.
+      </p>
+    </div>
 
-          <div class="card tilt reveal" style="--d: 90ms">
-            <span class="pill">Community</span>
-            <h3>Digital skills training (Voluntary)</h3>
-            <p class="muted card-desc">
-              I ran interactive sessions on digital literacy and communication skills,
-              focused on confidence and practical readiness.
-            </p>
-          </div>
-        </div>
+    <!-- Card 2 -->
+    <div class="card tilt reveal" style="--d: 90ms">
+      <span class="pill">Community</span>
+      <h3>Digital skills training (Voluntary)</h3>
+      <p class="muted card-desc">
+        I ran interactive sessions on digital literacy and communication skills,
+        focused on confidence and practical readiness.
+      </p>
+    </div>
 
-        <div class="card tilt reveal" style="--d: 160ms">
-          <span class="pill">What I’m optimizing for</span>
+    <!-- Card 3 -->
+    <div class="card tilt reveal" style="--d: 180ms">
+      <span class="pill">Exploration</span>
+      <h3>Exploring global cuisines</h3>
+      <p class="muted card-desc">
+        I enjoy exploring global cuisines and experimenting with new recipes.
+        Learning techniques and flavors keeps me curious and patient with the process.
+      </p>
+    </div>
 
-          <div class="chips chips-spaced">
-            <span class="chip">Trustworthy data, not “pretty” data</span>
-            <span class="chip">Dashboards that explain the why</span>
-            <span class="chip">Validation at the edges</span>
-            <span class="chip">Automation that saves real time</span>
-            <span class="chip">Testing the awkward cases</span>
-          </div>
+    <!-- Card 4 -->
+    <div class="card tilt reveal" style="--d: 270ms">
+      <span class="pill">Well-being</span>
+      <h3>Badminton</h3>
+      <p class="muted card-desc">
+        Playing badminton helps me stay active and focused.
+        I like the mix of quick decisions, consistency, and competitive energy.
+      </p>
+    </div>
+  </div>
 
-          <p class="note">
-            My favorite outputs are the ones people stop questioning and start using.
-          </p>
-        </div>
-      </section>
+  <div class="card tilt reveal" style="--d: 360ms">
+    <span class="pill">What I’m optimizing for</span>
 
+    <div class="chips chips-spaced">
+      <span class="chip">Trustworthy data, not “pretty” data</span>
+      <span class="chip">Dashboards that explain the why</span>
+      <span class="chip">Validation at the edges</span>
+      <span class="chip">Automation that saves real time</span>
+      <span class="chip">Testing the awkward cases</span>
+    </div>
+
+    <p class="note">
+      The output should answer questions, not create them.
+    </p>
+  </div>
+</section>
       <!-- GET IN TOUCH -->
       <section id="contact" class="section" data-label="Contact">
         <div class="contact-wrap">

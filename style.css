@@ -928,3 +928,29 @@ button:focus-visible {
 .projects-more-summary:hover {
   opacity: 0.7;
 }
+/* Brand logo in navbar */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.brand-logo {
+  height: 22px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  image-rendering: auto;
+
+}
+
+.brand-text {
+  font-weight: 700;
+}
+.brand-logo {
+  margin-left: -6px;
+}
+.brand-logo {
+  transform: translateX(-30px);
+}
