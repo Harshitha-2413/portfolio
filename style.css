@@ -954,3 +954,9 @@ button:focus-visible {
 .brand-logo {
   transform: translateX(-30px);
 }
+.brand-logo {
+  height: 22px;
+  width: auto;
+  max-width: none;
+  flex: 0 0 auto;
+}
