@@ -40,9 +40,9 @@
 
   resumeBtn?.addEventListener("click", () => {
     const text =
-      `Please contact me and I will share my resume:\n\n` +
-      `Email: barataha@mail.uc.edu\n\n` +
-      `Thank you.\n`;
+  `Please contact me and I will share my resume:\n\n` +
+  `Email: harshithabaratam24@gmail.com\n\n` +
+  `Thank you.\n`;
 
     downloadBlob("CONTACT_ME_FOR_RESUME.txt", text);
   });

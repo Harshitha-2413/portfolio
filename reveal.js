@@ -30,14 +30,14 @@
     if (!holder) return;
 
     const targets = [
-      { id: "top", label: "Home" },
-      { id: "work", label: "Projects" },
-      { id: "hackathons", label: "Hackathons" },
-      { id: "experience", label: "Experience" },
-      { id: "skills", label: "Skills" },
-      { id: "beyond", label: "Interests" },
-      { id: "contact", label: "Get in touch" },
-    ];
+  { id: "top", label: "Home" },
+  { id: "experience", label: "Experience" },
+  { id: "hackathons", label: "Hackathons" },
+  { id: "work", label: "Projects" },
+  { id: "skills", label: "Skills" },
+  { id: "beyond", label: "Interests" },
+  { id: "contact", label: "Get in touch" },
+];
 
     const colors = ["#34d7c5", "#1ea89f", "#7cf0d8", "#0f6f7a"];
 
